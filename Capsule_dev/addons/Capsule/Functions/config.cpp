@@ -33,6 +33,13 @@ class CfgFunctions
 				file="\Capsule\Functions\HoldActions\fn_holdAction_animationTimerCode.sqf";
 			};
 		};
+		class Respawn
+		{
+			class showRespawnMenuPositionList
+			{
+				file = "\Capsule\Functions\Respawn\fn_showRespawnMenuPositionList.sqf";
+			};
+		};
 	};
 	class A3_Jets
 	{
