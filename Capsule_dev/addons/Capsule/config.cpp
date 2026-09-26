@@ -8585,7 +8585,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 				"AmovPercMstpSlowWrflDnon_AmovPsitMstpSrasWrflDnon", 0.1,
 				"LadderRifleOn", 1,
 				"AmovPercMstpSnonWnonDnon_AcinPknlMwlkSnonWnonDb_1", 0.1,
-				"Acts_TreatingWounded_in", 10e-5,
+				"Acts_TreatingWounded_in", 0.0001,
 				"Acts_SignalToCheck", 0.001,
 				"Acts_AidlPercMstpSlowWrflDnon_pissing", 0.001,
 				"AmovPercMstpSrasWrflDnon_AmovPercMstpSrasWlnrDnon", 0.02,
@@ -8771,51 +8771,6 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		class AmovPercMrunSnonWnonDf: AmovPercMstpSnonWnonDnon
 		{
 			delete soundEdge;
-
-			interpolateTo[] =
-			{
-				"AmovPercMstpSnonWnonDnon", 0.025,
-				"AmovPercMwlkSnonWnonDf", 0.025,
-				"AmovPknlMrunSnonWnonDf", 0.025,
-				"AmovPercMrunSnonWnonDfl", 0.025,
-				"AmovPercMrunSnonWnonDfr", 0.025,
-				"AmovPercMrunSnonWnonDl", 0.025,
-				"AmovPercMrunSnonWnonDr", 0.025,
-				"AmovPercMevaSnonWnonDf", 0.025,
-				"AmovPercMevaSnonWnonDf", 0.025,
-				"AmovPercMrunSnonWnonDf_AmovPpneMstpSnonWnonDnon", 0.019,
-				"Unconscious", 0.02
-			};
-		};
-		class AmovPercMrunSnonWnonDfl: AmovPercMrunSnonWnonDf
-		{
-			interpolateTo[] =
-			{
-				"AmovPercMrunSnonWnonDf", 0.02,
-				"AmovPercMstpSnonWnonDnon", 0.025,
-				"AmovPercMwlkSnonWnonDfl", 0.025,
-				"AmovPercMrunSnonWnonDl", 0.025,
-				"AmovPercMrunSnonWnonDfr", 0.025,
-				"AmovPknlMrunSnonWnonDfl", 0.03,
-				"AmovPercMevaSnonWnonDfl", 0.02,
-				"AmovPercMrunSnonWnonDf_AmovPpneMstpSnonWnonDnon", 0.019,
-				"Unconscious", 0.02
-			};
-		};
-		class AmovPercMrunSnonWnonDfr: AmovPercMrunSnonWnonDf
-		{
-			interpolateTo[] =
-			{
-				"AmovPercMrunSnonWnonDf", 0.025,
-				"AmovPercMstpSnonWnonDnon", 0.025,
-				"AmovPercMwlkSnonWnonDfr", 0.025,
-				"AmovPercMrunSnonWnonDr", 0.025,
-				"AmovPercMrunSnonWnonDfl", 0.025,
-				"AmovPknlMrunSnonWnonDfr", 0.03,
-				"AmovPercMevaSnonWnonDfr", 0.02,
-				"AmovPercMrunSnonWnonDf_AmovPpneMstpSnonWnonDnon", 0.019,
-				"Unconscious", 0.02
-			};
 		};
 
 		class AmovPknlMstpSnonWnonDnon: AmovPercMstpSnonWnonDnon
@@ -8832,53 +8787,6 @@ class CfgMovesMaleSdr: CfgMovesBasic
 				"AmovPknlMstpSnonWnonDnon_AmovPpneMstpSnonWnonDnon", 0.02,
 				"AmovPknlMstpSnonWnonDnon_AwopPknlMstpSoptWbinDnon", 0.02,
 				"AmovPknlMstpSnonWnonDnon", 0.02
-			};
-		};
-		class AmovPknlMrunSnonWnonDf: AmovPknlMstpSnonWnonDnon
-		{
-			interpolateTo[] =
-			{
-				"AmovPercMrunSnonWnonDf", 0.03,
-				"AmovPknlMstpSnonWnonDnon", 0.025,
-				"AmovPknlMwlkSnonWnonDf", 0.025,
-				"AmovPknlMrunSnonWnonDfl", 0.025,
-				"AmovPknlMrunSnonWnonDfr", 0.025,
-				"AmovPknlMevaSnonWnonDf", 0.025,
-				"Unconscious", 0.02,
-				"AmovPercMrunSnonWnonDf_AmovPpneMstpSnonWnonDnon", 0.019,
-				"AmovPknlMstpSnonWnonDnon_relax", 0.1
-			};
-		};
-		class AmovPknlMrunSnonWnonDfl: AmovPknlMrunSnonWnonDf
-		{
-			interpolateTo[] =
-			{
-				"AmovPknlMstpSnonWnonDnon", 0.025,
-				"AmovPercMrunSnonWnonDfl", 0.03,
-				"AmovPknlMrunSnonWnonDf", 0.025,
-				"AmovPknlMwlkSnonWnonDfl", 0.025,
-				"AmovPknlMrunSnonWnonDl", 0.025,
-				"AmovPknlMevaSnonWnonDfl", 0.025,
-				"AmovPknlMstpSnonWnonDnon_AmovPercMsprSnonWnonDf", 0.01,
-				"Unconscious", 0.02,
-				"AmovPercMrunSnonWnonDf_AmovPpneMstpSnonWnonDnon", 0.019,
-				"AmovPknlMstpSnonWnonDnon_relax", 0.1
-			};
-		};
-		class AmovPknlMrunSnonWnonDfr: AmovPknlMrunSnonWnonDf
-		{
-			interpolateTo[] =
-			{
-				"AmovPknlMstpSnonWnonDnon", 0.025,
-				"AmovPercMrunSnonWnonDfr", 0.03,
-				"AmovPknlMrunSnonWnonDf", 0.025,
-				"AmovPknlMwlkSnonWnonDfr", 0.025,
-				"AmovPknlMrunSnonWnonDr", 0.025,
-				"AmovPknlMevaSnonWnonDfr", 0.025,
-				"AmovPknlMstpSnonWnonDnon_AmovPercMsprSnonWnonDf", 0.01,
-				"Unconscious", 0.02,
-				"AmovPercMrunSnonWnonDf_AmovPpneMstpSnonWnonDnon", 0.019,
-				"AmovPknlMstpSnonWnonDnon_relax", 0.1
 			};
 		};
 
@@ -8953,24 +8861,6 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			speed = 0.5;
 		};
 
-		//adding knl to pne (can't do "from" for some reason...)
-		class AmovPknlMstpSrasWlnrDnon: Default
-		{
-			connectTo[] =
-			{
-				"AmovPknlMstpSrasWlnrDnon_AmovPercMstpSrasWlnrDnon", 0.02,
-				"AmovPknlMstpSrasWlnrDnon_AmovPknlMstpSrasWrflDnon", 0.02,
-				"AmovPknlMstpSrasWlnrDnon_AmovPknlMstpSrasWpstDnon", 0.02,
-				"AmovPknlMstpSrasWlnrDnon_AwopPknlMstpSoptWbinDnon", 0.02,
-				"AmovPknlMstpSrasWlnrDnon_AmovPpneMstpSrasWlnrDnon", 0.02, //add this
-				"AmovPknlMstpSrasWlnrDnon_AmovPercMstpSnonWnonDnon", 0.03,
-				"AmovPknlMstpSrasWlnrDnon_AmovPpneMstpSnonWnonDnon", 0.02,
-				"AmovPknlMstpSrasWlnrDnon_AmovPknlMstpSnonWnonDnon", 0.02,
-				"ReloadRPGKneel", 0.5,
-				"AmovPknlMstpSrasWlnrDnon", 0.02
-			};
-		};
-
 		//fix getting up when down
 		class AmovPpneMstpSrasWrflDnon_injured;
 		class AinjPpneMstpSnonWrflDnon: AmovPpneMstpSrasWrflDnon_injured
@@ -9004,16 +8894,6 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			minPlayTime = 0.9;
 		};
 
-		class AmovPpneMstpSrasWlnrDnon_AmovPknlMstpSrasWlnrDnon: TransAnimBase
-		{
-			interpolateTo[] =
-			{
-				"AmovPknlMstpSrasWlnrDnon_AmovPpneMstpSrasWlnrDnon", 0.02,
-				"Unconscious", 0.02
-			};
-			reverse = "AmovPknlMstpSrasWlnrDnon_AmovPpneMstpSrasWlnrDnon";
-		};
-
 		//fix crouched non-pistol looping
 		class AmovPknlMstpSrasWpstDnon_AmovPknlMstpSnonWnonDnon;
 		class AmovPknlMstpSnonWnonDnon_AmovPknlMstpSrasWpstDnon: AmovPknlMstpSrasWpstDnon_AmovPknlMstpSnonWnonDnon
@@ -9036,6 +8916,24 @@ class CfgMovesMaleSdr: CfgMovesBasic
 				"AmovPknlMstpSnonWnonDnon_AmovPpneMstpSnonWnonDnon", 0.02,
 				"AmovPknlMstpSnonWnonDnon_AwopPknlMstpSoptWbinDnon", 0.02
 			};
+		};
+
+		class HubTemplate_Briefing;
+		class HubBriefing_ext: HubTemplate_Briefing
+		{
+			looped = 1;
+		};
+
+		class CutSceneAnimationBaseZoZo;
+		class HubBriefing_ext_Contact: CutSceneAnimationBaseZoZo
+		{
+			delete looped;
+		};
+
+		class HubSpectator_stand;
+		class HubSpectator_stand_Contact: HubSpectator_stand
+		{
+			delete looped;
 		};
 	};
 };
